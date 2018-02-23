@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  /*border: 2px solid orange;*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+div.top-box {
+  margin: 8px 30px -15px 25px;
+  padding: 8px 8px 2px 20px;
+  /*border: 2px solid red;*/
+}
+
+#name-head {
+  /*border: 2px solid green;*/
+  font-family: times;
+  letter-spacing: 15px;
+  font-size: 55px;
+  float: left;
+}
+
+#ig-logo {
+  /*border: 2px solid blue;*/
+  float: right;
+  padding: 5px 5px 5px 5px;
+}
+
+#ig-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+div.showcase {
+  background-image: url('../images/drumline.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-hov:hover {
+  /*transition: all 0.3s; /*applies to all pictures*/
+  transform: scale(1.1);
+  transition: width 3s, height 3s, transform 0.4s;
+}
+
+#logo-hov {
+  opacity: 4;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  /*for safari*/
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+div.bottom-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 10px 40px 10px;
+  padding: 20px 10px 20px 10px;
+}
+
+#below {
+  font-family: 'Kalam';
+  font-size: 20px;
+}
+
+@media screen and (max-width: 99%) {
+  .showcase {
+    width: 100%;
+  }
+  .top-box {
+    width: 70%;
+  }
+  .bottom-box{
+    width: 30%;
+  }
+  img{
+    width: 100%;
+  }
+}

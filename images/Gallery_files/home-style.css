@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ #navbar{
+   background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -100px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+ }
+ #navbar a{
+   float: left;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 30px;
+   text-decoration: none;
+   font-size: 25px;
+ }
+ #navbar a:hover{
+   background-color: #ddd;
+   transition: 0.3s;
+    color: black;
+ }
+/************************************/
+div.main{
+  padding-top: -1px;
+  margin-top: 0px;
+  height:680px;
+}
+div.landing{
+  background-image:url("../images/overlook.jpeg");
+  min-height: 150%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.display-middle{
+  padding: 300px 20px;
+   margin: 0 auto;
+   vertical-align:middle;
+   text-align:center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#display-middle-text{
+  font-family: 'Didact Gothic';
+  font-size: 100px;
+  letter-spacing: 8px;
+  color: #eaece5;
+  text-shadow: 2px 4px #3b3a30;
+}
+div.text-block{
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  /*background: rgba(0, 0, 0, 0.5);*/
+
+  padding: 15px 15px 13px 15px;
+}
+/************************************/
+div.about-section{
+  height:80%;
+  background-color:white;
+  font-size:36px;
+}
+div.about-text{
+  position: absolute;
+  display: flex;
+  
+}
+#about-p{
+  font-size: 22px;
+}
+div.marching-competition{
+  background-image:url("../images/cool.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#band{
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+div.portraits{
+  background-image:url("../images/purple-flag.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.trojan-bandfest{
+  background-image:url("../images/competition.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.bottom-page{
+
+}
