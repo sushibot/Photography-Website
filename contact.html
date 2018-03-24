@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -19,16 +20,24 @@
     <a id="p2" href="./gallery.html">Gallery</a>
   </div>
   <div class="about-section">
-    <h1>Contact</h1>
-    <p></p>
+    <div class="contact-name">
+      <h1>Contact</h1>
+      <p>This section is available for inquiries from potential clients to contact Jolly Tugas directly. All inquiries are responded to on a first come first serve basis and we will do the best we can.</p>
+    </div>
   </div>
   <div class="container">
-
-    <h1 >Testing</h1>
-    <section>
-    <h2>Testing again...</h2>
-    </section>
+    <p>Please use the form below to contact Jolly Tugas Photography with any questions or comments you may have. We look forward to talking with you soon and will reply to your email as soon as possible. </p>
+    <form class="info-section" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+      <input class="mytext" type="text" name="fullname" placeholder="Your name" tabindex="2" ><br><br>
+      <input class="mytext"  type="text" name="email"  placeholder="Your Email Address" ><br><br>
+      <input class="mytext" type="text" name="phn-number" placeholder="Your Phone Number"><br><br>
+      <textarea class="message-box" type="text" name="message" placeholder="Type Message Here.." ></textarea><br><br>
+      <input type="submit" name="submit" value="Send">
+    </form>
   </div>
+  <footer>
+    <p> </p>
+  </footer>
 
 
 
