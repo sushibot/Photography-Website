@@ -1,0 +1,306 @@
+/* Home Style Start */
+
+p {
+  font-size: 18px;
+  font-family: 'Anaheim';
+}
+a{
+  font-family: 'Anaheim';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navbar {
+  /* border: 1px solid red; */
+  overflow: hidden;
+  background-color: white;
+  /* Black background color */
+  position: fixed;
+  /* Make it stick/fixed */
+  top: -100px;
+  /* Hide the navbar 50 px outside of the top view */
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+}
+
+#navbar a {
+  /* border: 1px solid orange; */
+  justify-content: right;
+  float: right;
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 27px;
+}
+#navbar a.login{
+  background-color: #f0f0f0;
+}
+#navbar a:hover{
+  color: #c6bcb6;
+}
+
+.navbar-left {
+  float: left;
+  padding: -15px;
+  margin: -15px;
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+#page1 {
+  font-family: 'Anaheim';
+}
+
+#page2{
+  font-family: 'Anaheim';
+}
+
+#ig-icon {
+  /* border: 2px solid brown; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+#logo {
+  width: 65px;
+  height: 65px;
+}
+
+#logo-only:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(2px 2px 2px #222);
+  transition: 0.3s;
+  color: black;
+}
+
+#navbar a.responsive-icon{
+  display: none;
+}
+
+
+
+/************************************/
+
+div.main {
+  /*border: 2px solid red;*/
+  padding-top: -1px;
+  margin-top: 0px;
+  height: 680px;
+}
+
+div.landing {
+  background-image: url("../images/Jolly.jpg");
+  min-height: 150%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.display-middle {
+  /*border: 3px solid blue;*/
+  padding: 200px 20px;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display-middle-text {
+  font-family: 'Anaheim';
+  font-size: 200px;
+  font-weight: bolder;
+  letter-spacing: 8px;
+  color: white;
+  text-shadow: 2px 4px black;
+  margin: 0 auto;
+}
+
+/********** *Home-ction* *************/
+
+div.about-jolly {
+  /* border: 2px solid red; */
+  /* width: 80%; */
+  padding: 100px 20px 100px 20px;
+  margin: 10px 10px 10px 20px;
+  height: 80%;
+  background-color: white;
+  /* font-size: 14px; */
+}
+
+/* p {
+  font-size: 14px;
+  font-family: 'Anaheim';
+} */
+
+/*****************************/
+
+div.marching-competition {
+  width: 100%;
+  background-image: url("../images/cool.jpg");
+  min-height: 120%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#band {
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+div.portraits {
+  width: 100%;
+  background-image: url("../images/purple-flag.jpg");
+  min-height: 120%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.trojan-bandfest {
+  width: 100%;
+  background-image: url("../images/competition.jpg");
+  min-height: 120%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*********************************************/
+
+footer.bottom-page {
+  /* width: 100%; */
+  /*border: 3px solid red;*/
+  background-color: white;
+  margin: 40px 10px 55px 50px;
+}
+
+div.button-top {
+  /*border: 2px solid blue;*/
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-top {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+/* Home Style End */
+
+/* Contact Styles Start */
+/* Start about secton */
+
+div.about-section {
+  border: 0.01px solid white;
+  background-image: url("../images/table-9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* margin-top: 98px; */
+  /* height: 400px; */
+  width: 100%;
+}
+
+div.contact-name {
+  /* border: 2px solid orange; */
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* End about section */
+
+/* Start info section */
+
+div.info {
+  padding-top: -1px;
+  height: 680px;
+}
+
+/* End info section */
+
+div.container {
+  text-align: center;
+  /* border: 2px solid red; */
+  width: 100%;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+
+.mytext {
+  width: 500px;
+}
+
+.message-box {
+  width: 500px;
+  height: 200px;
+}
+/* Contact Styles End */
+
+/* Mobile Styles Start */
+
+/* This hides all the other navigator pages and only displays 2 items */
+@media screen and (max-width: 600px){
+   .navbar-left a:not(logo-only){display:flex};
+   #navbar a {display:none};
+   #navbar a.responsive-icon{
+     float: right;
+     display: flex;
+   }
+}
+
+@media screen and (max-width: 600px){
+  #navbar.responsive{position: relative};
+  #navbar.responsive a.responsive-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+  .mytext, .message-box {
+    width: 100%;
+  }
+  .about-jolly {
+    width: 100%;
+  }
+}
+
