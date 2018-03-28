@@ -1,3 +1,4 @@
+/* Contact Styles Start */
 * {
   margin: 0;
   padding: 0;
@@ -110,11 +111,15 @@ div.container {
   height: 200px;
 }
 
-@media screen and (max-width: 959px) {
-  .info {
-    width: 100%;
+@media screen and (max-width: 600px) {
+  p{
+    font-size: 14px;
   }
-  section {
-    width: 70%;
+  .container {
+
+  }
+  .mytext, .message-box{
+      width: 100%;
   }
 }
+/* Contact Styles End */

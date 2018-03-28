@@ -83,10 +83,10 @@ ul {
 }
 
 #logo-only:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(2px 2px 2px #222);
+  transform: scale(1.1);
+  /* filter: drop-shadow(1px 1px 1px #222); */
   transition: 0.3s;
-  color: black;
+ color: black;
 }
 
 #navbar a.responsive-icon{
@@ -270,6 +270,98 @@ div.container {
   height: 200px;
 }
 /* Contact Styles End */
+
+/* Gallery Styles Start */
+
+/********Start of NavBar Shiet*********/
+#navbar {
+  background-color: white;
+  /* Black background color */
+  position: fixed;
+  /* Make it stick/fixed */
+  /* Hide the navbar 50 px outside of the top view */
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar-left{
+  float: left;
+  padding: -15px;
+  margin: -15px;
+  filter: drop-shadow(2px 2px 2px #222);
+}
+#page1{
+  font-family: 'Anaheim';
+}
+#page2{
+  font-family: 'Anaheim';
+
+}
+#logo{
+  width: 70px;
+  height: 70px;
+}
+
+/**********End of NavBar Shiet************/
+
+/* Start of header div */
+div.header{
+  padding: 150px 20px 10px 20px;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.header-p{
+  /* border: 2px solid orange; */
+  display: flex;
+  justify-content: middle;
+  align-items: center;
+  padding: 20px;
+}
+#peader{
+  font-size: 16px;
+    align-items: center;
+    justify-content: middle;
+
+}
+/*  End of Header Div*/
+div.row:after{
+
+
+
+  display: table;
+  content: "";
+  clear:both;
+}
+
+div.column{
+  margin: 0px auto;
+  float: left;
+  flex: 50%;
+  padding: 2px;
+}
+
+div.column img{
+  margin-top: 5px;
+}
+/* Gallery Styles End */
+
+
 
 /* Mobile Styles Start */
 
