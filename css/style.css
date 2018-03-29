@@ -1,11 +1,14 @@
 /* Home Style Start */
-
-p {
-  font-size: 18px;
-  font-family: 'Anaheim';
+h1{
+  font-family: 'Montserrat',sans-serif;
+}
+p{
+  /* Allows text to be responsive when page size changes */
+  font-size: 1.5vw;
+  font-family: 'Raleway', sans-serif;
 }
 a{
-  font-family: 'Anaheim';
+  font-family: 'Montserrat',sans-serif;
 }
 
 * {
@@ -44,7 +47,7 @@ ul {
   text-align: center;
   padding: 20px;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 27vw;
 }
 #navbar a.login{
   background-color: #f0f0f0;
@@ -61,11 +64,13 @@ ul {
 }
 
 #page1 {
-  font-family: 'Anaheim';
+  font-family: 'Montserrat';
+  font-weight: 100;
 }
 
 #page2{
-  font-family: 'Anaheim';
+  font-family: 'Montserrat';
+  font-weight: 100;
 }
 
 #ig-icon {
@@ -83,10 +88,10 @@ ul {
 }
 
 #logo-only:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(2px 2px 2px #222);
+  transform: scale(1.1);
+  /* filter: drop-shadow(1px 1px 1px #222); */
   transition: 0.3s;
-  color: black;
+ color: black;
 }
 
 #navbar a.responsive-icon{
@@ -106,8 +111,8 @@ div.main {
 
 div.landing {
   background-image: url("../images/Jolly.jpg");
-  min-height: 150%;
-  width: 100%;
+  min-height: auto;
+  max-width: auto;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -126,9 +131,9 @@ div.display-middle {
 }
 
 #display-middle-text {
-  font-family: 'Anaheim';
-  font-size: 200px;
-  font-weight: bolder;
+  font-family: 'Montserrat';
+  font-size: 15vw;
+  font-weight: lighter;
   letter-spacing: 8px;
   color: white;
   text-shadow: 2px 4px black;
@@ -140,42 +145,35 @@ div.display-middle {
 div.about-jolly {
   /* border: 2px solid red; */
   /* width: 80%; */
-  padding: 100px 20px 100px 20px;
-  margin: 10px 10px 10px 20px;
+  padding: 120px 20px 120px 20px;
+  margin: 20px 20px 20px 20px;
   height: 80%;
   background-color: white;
-  /* font-size: 14px; */
-}
 
-/* p {
-  font-size: 14px;
-  font-family: 'Anaheim';
-} */
+}
+#about-info{
+  justify-self: center;
+  padding: 50px 10px 50px 10px;
+  text-align: center;
+  font-size: 1.5vw;
+}
 
 /*****************************/
 
 div.marching-competition {
-  width: 100%;
+  max-width: 100%;
   background-image: url("../images/cool.jpg");
-  min-height: 120%;
+  min-height: 100%;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#band {
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
 div.portraits {
-  width: 100%;
+  max-width: 100%;
   background-image: url("../images/purple-flag.jpg");
-  min-height: 120%;
+  min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,13 +181,28 @@ div.portraits {
 }
 
 div.trojan-bandfest {
-  width: 100%;
+  max-width: 100%;
   background-image: url("../images/competition.jpg");
-  min-height: 120%;
+  min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.paradox-box{
+  justify-content: center;
+  padding:300px 20px 50px 20px;
+}
+.paradox-text{
+  font-family: 'Raleway';
+  font-size: 4vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 /*********************************************/
@@ -216,8 +229,9 @@ div.button-top {
   font-family: sans-serif;
   font-size: 22px;
 }
-
 /* Home Style End */
+
+
 
 /* Contact Styles Start */
 /* Start about secton */
@@ -271,6 +285,91 @@ div.container {
 }
 /* Contact Styles End */
 
+/* Gallery Styles Start */
+
+/********Start of NavBar Shiet*********/
+#navbar {
+  background-color: white;
+  /* Black background color */
+  position: fixed;
+  /* Make it stick/fixed */
+  /* Hide the navbar 50 px outside of the top view */
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar-left{
+  float: left;
+  padding: -15px;
+  margin: -15px;
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+#logo{
+  width: 70px;
+  height: 70px;
+}
+
+/**********End of NavBar Shiet************/
+
+/* Start of header div */
+div.header{
+  padding: 150px 20px 10px 20px;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.header-p{
+  /* border: 2px solid orange; */
+  display: flex;
+  justify-content: middle;
+  align-items: center;
+  padding: 20px;
+}
+#peader{
+  /* border: 2px solid blue; */
+  font-size: 16px;
+    align-items: center;
+    justify-content: middle;
+
+}
+/*  End of Header Div*/
+div.row:after{
+
+  display: table;
+  content: "";
+  clear:both;
+}
+
+div.column{
+  margin: 0px auto;
+  float: left;
+  flex: 50%;
+  padding: 2px;
+}
+
+div.column img{
+  margin-top: 5px;
+}
+/* Gallery Styles End */
+
+
+
 /* Mobile Styles Start */
 
 /* This hides all the other navigator pages and only displays 2 items */
@@ -300,7 +399,12 @@ div.container {
     width: 100%;
   }
   .about-jolly {
+    width: 80%;
+    min-height: 80%;
+  }
+  #about-info{
     width: 100%;
+    font-size: 2vw;
   }
 }
 
