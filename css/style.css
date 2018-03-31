@@ -1,16 +1,23 @@
 /* Home Style Start */
-h1{
-  font-family: 'Montserrat',sans-serif;
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
 }
-p{
+
+p {
   /* Allows text to be responsive when page size changes */
   font-size: 1.5vw;
   font-family: 'Raleway', sans-serif;
 }
-a{
-  font-family: 'Montserrat',sans-serif;
-}
 
+a {
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 * {
   margin: 0;
   padding: 0;
@@ -49,10 +56,12 @@ ul {
   text-decoration: none;
   font-size: 27vw;
 }
-#navbar a.login{
+
+#navbar a.login {
   background-color: #f0f0f0;
 }
-#navbar a:hover{
+
+#navbar a:hover {
   color: #c6bcb6;
 }
 
@@ -68,7 +77,7 @@ ul {
   font-weight: 100;
 }
 
-#page2{
+#page2 {
   font-family: 'Montserrat';
   font-weight: 100;
 }
@@ -91,14 +100,12 @@ ul {
   transform: scale(1.1);
   /* filter: drop-shadow(1px 1px 1px #222); */
   transition: 0.3s;
- color: black;
+  color: black;
 }
 
-#navbar a.responsive-icon{
+#navbar a.responsive-icon {
   display: none;
 }
-
-
 
 /************************************/
 
@@ -149,13 +156,15 @@ div.about-jolly {
   margin: 20px 20px 20px 20px;
   height: 80%;
   background-color: white;
-
 }
-#about-info{
+
+#about-info {
+  float: left;
+  /* border: 2px solid orange; */
   justify-self: center;
-  padding: 50px 10px 50px 10px;
-  text-align: center;
-  font-size: 1.5vw;
+  padding: 50px 60px 50px 60px;
+  /* text-align: center; */
+  font-size: 1.6svw;
 }
 
 /*****************************/
@@ -189,11 +198,13 @@ div.trojan-bandfest {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.paradox-box{
+
+.paradox-box {
   justify-content: center;
-  padding:300px 20px 50px 20px;
+  padding: 300px 20px 50px 20px;
 }
-.paradox-text{
+
+.paradox-text {
   font-family: 'Raleway';
   font-size: 4vw;
   display: flex;
@@ -229,11 +240,11 @@ div.button-top {
   font-family: sans-serif;
   font-size: 22px;
 }
+
 /* Home Style End */
 
-
-
 /* Contact Styles Start */
+
 /* Start about secton */
 
 div.about-section {
@@ -283,11 +294,13 @@ div.container {
   width: 500px;
   height: 200px;
 }
+
 /* Contact Styles End */
 
 /* Gallery Styles Start */
 
 /********Start of NavBar Shiet*********/
+
 #navbar {
   background-color: white;
   /* Black background color */
@@ -310,14 +323,14 @@ div.container {
   font-size: 25px;
 }
 
-.navbar-left{
+.navbar-left {
   float: left;
   padding: -15px;
   margin: -15px;
   filter: drop-shadow(2px 2px 2px #222);
 }
 
-#logo{
+#logo {
   width: 70px;
   height: 70px;
 }
@@ -325,7 +338,8 @@ div.container {
 /**********End of NavBar Shiet************/
 
 /* Start of header div */
-div.header{
+
+div.header {
   padding: 150px 20px 10px 20px;
   margin: 0 auto;
   vertical-align: middle;
@@ -334,60 +348,70 @@ div.header{
   justify-content: center;
   align-items: center;
 }
-div.header-p{
+
+div.header-p {
   /* border: 2px solid orange; */
   display: flex;
   justify-content: middle;
   align-items: center;
   padding: 20px;
 }
-#peader{
+
+#peader {
   /* border: 2px solid blue; */
   font-size: 16px;
-    align-items: center;
-    justify-content: middle;
-
+  align-items: center;
+  justify-content: middle;
 }
-/*  End of Header Div*/
-div.row:after{
 
+/*  End of Header Div*/
+
+div.row:after {
   display: table;
   content: "";
-  clear:both;
+  clear: both;
 }
 
-div.column{
+div.column {
   margin: 0px auto;
   float: left;
   flex: 50%;
   padding: 2px;
 }
 
-div.column img{
+div.column img {
   margin-top: 5px;
 }
+
 /* Gallery Styles End */
-
-
 
 /* Mobile Styles Start */
 
 /* This hides all the other navigator pages and only displays 2 items */
-@media screen and (max-width: 600px){
-   .navbar-left a:not(logo-only){display:flex};
-   #navbar a {display:none};
-   #navbar a.responsive-icon{
-     float: right;
-     display: flex;
-   }
+
+@media screen and (max-width: 600px) {
+  .navbar-left a:not(logo-only) {
+    display: flex
+  }
+  ;
+  #navbar a {
+    display: none
+  }
+  ;
+  #navbar a.responsive-icon {
+    float: right;
+    display: flex;
+  }
 }
 
-@media screen and (max-width: 600px){
-  #navbar.responsive{position: relative};
-  #navbar.responsive a.responsive-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+@media screen and (max-width: 600px) {
+  #navbar.responsive {
+    position: relative
+  }
+  ;
+  #navbar {
+    background: blue;
+    border-bottom: 2px solid red;
   }
 }
 
@@ -402,9 +426,8 @@ div.column img{
     width: 80%;
     min-height: 80%;
   }
-  #about-info{
+  #about-info {
     width: 100%;
     font-size: 2vw;
   }
 }
-
