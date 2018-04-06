@@ -6,71 +6,63 @@ h1 {
 
 p {
   /* Allows text to be responsive when page size changes */
-  font-size: 1.5vw;
   font-family: 'Raleway', sans-serif;
 }
 
 a {
   font-family: 'Montserrat', sans-serif;
 }
-body{
+
+body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-* {
+
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
-ul {
-  list-style-type: none;
+/********Start of NavBar Shiet*********/
+
+.navbar {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-}
-
-#navbar {
-  /* border: 1px solid red; */
-  overflow: hidden;
-  background-color: white;
-  /* Black background color */
-  position: fixed;
-  /* Make it stick/fixed */
-  top: -100px;
-  /* Hide the navbar 50 px outside of the top view */
+  top: 0;
+  transition: 0.3s;
   width: 100%;
-  /* Full width */
-  transition: top 0.3s;
-  /* Transition effect when sliding down (and up) */
+  overflow: hidden;
+  float: left
 }
 
-#navbar a {
-  /* border: 1px solid orange; */
-  justify-content: right;
-  float: right;
-  display: flex;
+.navbar a {
   color: black;
-  text-align: center;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
-  font-size: 27vw;
+  font-size: 20px;
 }
 
-#navbar a.login {
-  background-color: #f0f0f0;
+#logo {
+  width: 70px;
+  height: 70px;
 }
 
-#navbar a:hover {
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navbar a:hover {
   color: #c6bcb6;
 }
 
-.navbar-left {
+/* .navbar-left {
   float: left;
   padding: -15px;
   margin: -15px;
   filter: drop-shadow(2px 2px 2px #222);
-}
+} */
 
 #page1 {
   font-family: 'Montserrat';
@@ -98,16 +90,155 @@ ul {
 
 #logo-only:hover {
   transform: scale(1.1);
-  /* filter: drop-shadow(1px 1px 1px #222); */
+  filter: drop-shadow(1px 1px 1px #222);
   transition: 0.3s;
   color: black;
 }
 
-#navbar a.responsive-icon {
+.navbar a.responsive-icon {
   display: none;
 }
 
-/************************************/
+/**********End of NavBar Shiet************/
+
+/************** Modal Begin *****************/
+
+/* Full width input fields */
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #015249;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #cd5360;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.lens-av {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.box {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  padding-right: 10px;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 600px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
 
 div.main {
   /*border: 2px solid red;*/
@@ -117,8 +248,8 @@ div.main {
 }
 
 div.landing {
-  background-image: url("../images/Jolly.jpg");
-  min-height: auto;
+  background-image: url("../images/faroe-island.jpg");
+  min-height: 150%;
   max-width: auto;
   background-attachment: fixed;
   background-position: center;
@@ -127,7 +258,6 @@ div.landing {
 }
 
 div.display-middle {
-  /*border: 3px solid blue;*/
   padding: 200px 20px;
   margin: 0 auto;
   vertical-align: middle;
@@ -139,12 +269,14 @@ div.display-middle {
 
 #display-middle-text {
   font-family: 'Montserrat';
-  font-size: 15vw;
-  font-weight: lighter;
+  font-size: 5vw;
+  font-weight: 600;
   letter-spacing: 8px;
-  color: white;
-  text-shadow: 2px 4px black;
+  color: #202020;
   margin: 0 auto;
+  border: 20px;
+  padding: 20px 20px 20px;
+  background-color: rgba(87, 170, 130, 0.5);
 }
 
 /********** *Home-ction* *************/
@@ -154,35 +286,36 @@ div.about-jolly {
   /* width: 80%; */
   padding: 120px 20px 120px 20px;
   margin: 20px 20px 20px 20px;
-  height: 80%;
+  min-height: 80%;
   background-color: white;
+  line-height: 1.8;
 }
 
 #about-info {
   float: left;
-  /* border: 2px solid orange; */
   justify-self: center;
-  padding: 50px 60px 50px 60px;
-  /* text-align: center; */
-  font-size: 1.6svw;
+  display: flex;
+  padding: 50px 100px 50px 100px;
+  font-size: 1.2vw;
+  color: hsl(0, 0, 30%);
 }
 
 /*****************************/
 
 div.marching-competition {
   max-width: 100%;
-  background-image: url("../images/cool.jpg");
-  min-height: 100%;
+  background-image: url("../images/yuriy-valley.jpg");
+  min-height: 120%;
   background-attachment: fixed;
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 div.portraits {
   max-width: 100%;
-  background-image: url("../images/purple-flag.jpg");
-  min-height: 100%;
+  background-image: url("../images/ali-picnic.jpg");
+  min-height: 120%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -191,29 +324,35 @@ div.portraits {
 
 div.trojan-bandfest {
   max-width: 100%;
-  background-image: url("../images/competition.jpg");
-  min-height: 100%;
+  background-image: url("../images/connor-sunset.jpg");
+  min-height: 120%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .paradox-box {
   justify-content: center;
-  padding: 300px 20px 50px 20px;
+  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /* padding: 300px 700px 50px 700px; */
 }
 
 .paradox-text {
+  margin: 0;
   font-family: 'Raleway';
-  font-size: 4vw;
-  display: flex;
+  font-size: 3vw;
+  align-items: center;
   justify-content: center;
+  font-weight: 100;
+  color: #383838;
   text-align: center;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(232, 232, 232, 0.6);
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
 /*********************************************/
@@ -249,12 +388,11 @@ div.button-top {
 
 div.about-section {
   border: 0.01px solid white;
-  background-image: url("../images/table-9.jpg");
+  background-image: url("../images/santiago-mountain.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   /* margin-top: 98px; */
-  /* height: 400px; */
   width: 100%;
 }
 
@@ -298,44 +436,6 @@ div.container {
 /* Contact Styles End */
 
 /* Gallery Styles Start */
-
-/********Start of NavBar Shiet*********/
-
-#navbar {
-  background-color: white;
-  /* Black background color */
-  position: fixed;
-  /* Make it stick/fixed */
-  /* Hide the navbar 50 px outside of the top view */
-  width: 100%;
-  /* Full width */
-  transition: top 0.3s;
-  /* Transition effect when sliding down (and up) */
-}
-
-#navbar a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-.navbar-left {
-  float: left;
-  padding: -15px;
-  margin: -15px;
-  filter: drop-shadow(2px 2px 2px #222);
-}
-
-#logo {
-  width: 70px;
-  height: 70px;
-}
-
-/**********End of NavBar Shiet************/
 
 /* Start of header div */
 
@@ -386,48 +486,49 @@ div.column img {
 /* Gallery Styles End */
 
 /* Mobile Styles Start */
+@media screen and (max-width: 600px){
+  .landing{
+    min-height: auto;
+    background-color: blue;
 
-/* This hides all the other navigator pages and only displays 2 items */
-
-@media screen and (max-width: 600px) {
-  .navbar-left a:not(logo-only) {
-    display: flex
-  }
-  ;
-  #navbar a {
-    display: none
-  }
-  ;
-  #navbar a.responsive-icon {
-    float: right;
-    display: flex;
   }
 }
-
+/* This hides all the other navigator pages and only displays 2 items */
 @media screen and (max-width: 600px) {
-  #navbar.responsive {
-    position: relative
+  .navbar a:not(:first-child) {
+    display: none;
   }
-  ;
-  #navbar {
-    background: blue;
-    border-bottom: 2px solid red;
+  .navbar a.responsive-icon {
+    float: right;
+    display: block;
+  }
+}
+/* Adds responsive class to .navbar when user clicks on icon.  */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive a.responsive-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 
 @media screen and (max-width: 600px) {
   p {
-    font-size: 16px;
+    font-size: 20px;
   }
   .mytext, .message-box {
     width: 100%;
   }
   .about-jolly {
-    width: 80%;
-    min-height: 80%;
-  }
-  #about-info {
-    width: 100%;
-    font-size: 2vw;
+    width: 50%;
+    min-height: 50%;
   }
 }

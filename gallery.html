@@ -13,15 +13,36 @@
 </head>
 
 <body>
-  <div id="navbar">
+  <div class="navbar" id="phone-nav">
     <div class="navbar-left">
       <a id="logo-only" href="./home.html"><img id="logo"src="./images/logo.png" alt="Jolly BT Photography"></img></a>
     </div>
-    <a href="javascript:void(0);" class="responsive-icon" onclick="myFunction()">&#9776;</a>
-    <a class ="login"href="#">Login</a>
+    <a id="page2" href="./gallery.html">Gallery</a>
+    <a id="page1" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
     <a href="https://www.instagram.com/jollybtphotography/"  target="_blank"><img id="ig-icon" src="./images/ig.png"></img>
-    <a id="page1" href="./contact.html">Contact</a>
-    <a id="page2">Gallery</a>
+    <a onclick ="document.getElementById('modal-id').style.display='block'" >Login</a>
+    <a href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()">&#9776;</a>
+  </div>
+  <div id="modal-id" class="modal">
+    <form class="modal-content animate" action="index.php" method="post">
+      <div class="imgcontainer">
+        <span onclick = "document.getElementById('modal-id').style.display='none'" class="close"> </span>
+        <img src="./images/logo.png" class="lens-av" >
+      </div>
+      <div class="box">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="text" name="psw" required>
+
+        <button type="submit">Login</button>
+      </div>
+      <div class="box" style="background-color:#f1f1f1">
+        <button type="button" onclick = "document.getElementById('modal-id').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">Password? </a></span>
+      </div>
+    </form>
   </div>
 
   <div class="header" >
