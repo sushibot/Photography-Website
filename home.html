@@ -4,28 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Aloha</title>
 </head>
 <body>
   <div class="navbar" id="phone-nav">
-       <a id="logo-only" href="./index.html"><img id="logo"src="./images/logo.png" alt="Jolly BT Photography"></img></a>
-       <a id="page2" href="./gallery.html">Gallery</a>
-       <a id="page1" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
-       <a href="https://www.instagram.com/jollybtphotography/"  target="_blank"><img id="ig-icon" src="./images/ig.png"></img>
-       <a onclick ="document.getElementById('modal-id').style.display='block'" >Login</a>
-       <a href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()"style="font-size:15px;">&#9776;</a>
+    <a id="logo-small" href="./home.html"><img src="./images/logo.png" id="logo-props" ></img></a>
+    <a id="left-only" href="./index.html">Jolly Tugas</a>
+    <a class="a-right" onclick ="document.getElementById('modal-id').style.display='block'" >Login</a>
+    <a class="a-right" href="./gallery.html">Gallery</a>
+    <a class="a-right" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
+    <a  href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()"style="font-size:20px;">&#9776;</a>
   </div>
 
   <div class="main">
 
     <!-- Where Jolly's Photo will be posted -->
-    <div class="landing">
+    <div id="landing" >
       <div class="display-middle">
         <h1 id="display-middle-text">Aloha</h1>
       </div>
@@ -54,29 +52,21 @@
     </div>
 
     <div class="about-jolly">
-      <p id="about-info">Lorem ipsum dolor sit amet, vis ex modo viderer eloquentiam, cum id aeque platonem. Eos ut modus perpetua disputando, sit ei unum sensibus sadipscing. Amet suas ut nam. Ne his dolore corpora scripserit, vix mazim soleat appareat ad. Quem error consulatu
-        sea at, nam et elitr officiis expetendis. Est nominavi splendide elaboraret eu, an mei tollit appetere, euismod blandit singulis in vix. At magna nominati has, cu autem bonorum nec. Harum pertinacia definitionem no pri, causae tritani veritus
-        id ius, reprimique reprehendunt pro at. Facer conceptam democritum est no, id cum omnis nusquam lucilius. Ubique animal appellantur no cum.</p>
+      <p>Hi</p>
     </div>
 
-    <div class="marching-competition">
-      <div class="paradox-box">
-        <h2 class="paradox-text">Portraits</h2>
-      </div>
+    <div class="marching-competition" id="pic1">
+
     </div>
 
 
-    <div class="portraits">
-      <div class="paradox-box">
-        <h2 class="paradox-text">Candid Shots</h2>
-      </div>
+    <div class="portraits" id="pic2">
+
     </div>
 
 
-    <div class="trojan-bandfest">
-      <div class="paradox-box">
-        <h2 class="paradox-text">Moments</h2>
-      </div>
+    <div class="trojan-bandfest" id="pic3">
+
     </div>
 
     <footer class="bottom-page">

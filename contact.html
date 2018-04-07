@@ -5,8 +5,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -17,16 +15,14 @@
 
 <body>
   <div class="navbar" id="phone-nav">
-    <div class="navbar-left">
-      <a id="logo-only" href="./home.html"><img id="logo"src="./images/logo.png" alt="Jolly BT Photography"></img></a>
-    </div>
-
-    <a id="page2" href="./gallery.html">Gallery</a>
-    <a id="page1" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
-    <a href="https://www.instagram.com/jollybtphotography/"  target="_blank"><img id="ig-icon" src="./images/ig.png"></img>
-    <a onclick ="document.getElementById('modal-id').style.display='block'" >Login</a>
-    <a href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()">&#9776;</a>
+    <a id="logo-small" href="./home.html"><img src="./images/logo.png" id="logo-props" ></img></a>
+    <a id="left-only" href="./index.html">Jolly Tugas</a>
+    <a class="a-right" onclick ="document.getElementById('modal-id').style.display='block'" >Login</a>
+    <a class="a-right" href="./gallery.html">Gallery</a>
+    <a class="a-right" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
+    <a  href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()"style="font-size:20px;">&#9776;</a>
   </div>
+
   <div id="modal-id" class="modal">
     <form class="modal-content animate" action="index.php" method="post">
       <div class="imgcontainer">

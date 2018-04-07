@@ -15,8 +15,9 @@ console.log(size);
 function phoneChange() {
   var x = document.getElementById("phone-nav");
   if (x.className === "navbar") {
-    x.className += "responsive";
+    x.className += " responsive";
   } else {
     x.className = "navbar";
   }
 }
+
