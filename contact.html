@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <title>Contact</title>
 </head>
-
 <body>
   <div class="navbar" id="phone-nav">
     <a id="logo-small" href="./home.html"><img src="./images/logo.png" id="logo-props" ></img></a>
     <a id="left-only" href="./index.html">Jolly Tugas</a>
-    <a class="a-right" onclick ="document.getElementById('modal-id').style.display='block'" >Login</a>
+    <a class="a-right" onclick="document.getElementById('modal-id').style.display='block'">Login</a>
     <a class="a-right" href="./gallery.html">Gallery</a>
     <a class="a-right" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
-    <a  href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()"style="font-size:20px;">&#9776;</a>
+    <a href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()" style="font-size:20px;">&#9776;</a>
   </div>
 
-  <div id="modal-id" class="modal">
+  <!-- <div id="modal-id" class="modal">
     <form class="modal-content animate" action="index.php" method="post">
       <div class="imgcontainer">
-        <span onclick = "document.getElementById('modal-id').style.display='none'" class="close"> </span>
-        <img src="./images/logo.png" class="lens-av" >
+        <span onclick="document.getElementById('modal-id').style.display='none'" class="close"> </span>
+        <img src="./images/logo.png" class="lens-av">
       </div>
       <div class="box">
         <label for="uname"><b>Username</b></label>
@@ -39,37 +35,33 @@
         <button type="submit">Login</button>
       </div>
       <div class="box" style="background-color:#f1f1f1">
-        <button type="button" onclick = "document.getElementById('modal-id').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="button" onclick="document.getElementById('modal-id').style.display='none'" class="cancelbtn">Cancel</button>
         <span class="psw">Forgot <a href="#">Password? </a></span>
       </div>
     </form>
-  </div>
-  <div class="about-section">
-    <div class="contact-name">
-      <h1>Contact</h1>
-      <p>This section is available for inquiries from potential clients to contact Jolly Tugas directly. All inquiries are responded to on a first come first serve basis and we will do the best we can.</p>
+  </div> -->
+  <div class="hero-contact">
+    <div class="hero-text">
+      <!-- <h1>Contact</h1>
+      <p>Here is where you can contact me blah blah blah..</p> -->
     </div>
   </div>
-  <div class="container">
+  <!-- <div class="container">
     <p>Please use the form below to contact Jolly Tugas Photography with any questions or comments you may have. We look forward to talking with you soon and will reply to your email as soon as possible. </p>
     <form class="info-section" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
-      <input class="mytext" type="text" name="fullname" placeholder="Your name" tabindex="2" ><br><br>
-      <input class="mytext"  type="text" name="email"  placeholder="Your Email Address" ><br><br>
+      <input class="mytext" type="text" name="fullname" placeholder="Your name" tabindex="2"><br><br>
+      <input class="mytext" type="text" name="email" placeholder="Your Email Address"><br><br>
       <input class="mytext" type="text" name="phn-number" placeholder="Your Phone Number"><br><br>
-      <textarea class="message-box" type="text" name="message" placeholder="Type Message Here.." ></textarea><br><br>
+      <textarea class="message-box" type="text" name="message" placeholder="Type Message Here.."></textarea><br><br>
       <input type="submit" name="submit" value="Send">
     </form>
-  </div>
-  <footer>
-    <p> </p>
-  </footer>
+  </div> -->
+
 
 
 
 
 </body>
-
-<script src="./script/script.js">
-</script>
-
+<!-- <script src="./script/script.js">
+</script> -->
 </html>

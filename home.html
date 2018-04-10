@@ -10,20 +10,19 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Aloha</title>
 </head>
+
 <body>
   <div class="navbar" id="phone-nav">
     <a id="logo-small" href="./home.html"><img src="./images/logo.png" id="logo-props" ></img></a>
     <a id="left-only" href="./index.html">Jolly Tugas</a>
-    <a class="a-right" onclick ="document.getElementById('modal-id').style.display='block'" >Login</a>
+    <a class="a-right" onclick="document.getElementById('modal-id').style.display='block'">Login</a>
     <a class="a-right" href="./gallery.html">Gallery</a>
     <a class="a-right" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
-    <a  href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()"style="font-size:20px;">&#9776;</a>
+    <a href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()" style="font-size:20px;">&#9776;</a>
   </div>
 
   <div class="main">
-
-    <!-- Where Jolly's Photo will be posted -->
-    <div id="landing" >
+    <div id="landing">
       <div class="display-middle">
         <h1 id="display-middle-text">Aloha</h1>
       </div>
@@ -32,8 +31,8 @@
     <div id="modal-id" class="modal">
       <form class="modal-content animate" action="index.php" method="post">
         <div class="imgcontainer">
-          <span onclick = "document.getElementById('modal-id').style.display='none'" class="close"> </span>
-          <img src="./images/logo.png" class="lens-av" >
+          <span onclick="document.getElementById('modal-id').style.display='none'" class="close"> </span>
+          <img src="./images/logo.png" class="lens-av">
         </div>
         <div class="box">
           <label for="uname"><b>Username</b></label>
@@ -45,19 +44,19 @@
           <button type="submit">Login</button>
         </div>
         <div class="box" style="background-color:#f1f1f1">
-          <button type="button" onclick = "document.getElementById('modal-id').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" onclick="document.getElementById('modal-id').style.display='none'" class="cancelbtn">Cancel</button>
           <span class="psw">Forgot <a href="#">Password? </a></span>
         </div>
       </form>
     </div>
-
     <div class="about-jolly">
-      <p>Hi</p>
+      <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+        qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
     </div>
 
-    <div class="marching-competition" id="pic1">
-
-    </div>
+    <div class="marching-competition" id="pic1"> </div>
 
 
     <div class="portraits" id="pic2">
@@ -69,9 +68,9 @@
 
     </div>
 
-    <footer class="bottom-page">
-      <div class="button-top">
-        <p id="text-top"><a href="#top">Top</a></p>
+    <footer>
+      <div class="bottom-page">
+        <a href="#top">Top</a>
       </div>
     </footer>
   </div>
@@ -79,4 +78,5 @@
 
 </body>
 <script src="./script/script.js"></script>
+
 </html>

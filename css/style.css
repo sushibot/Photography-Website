@@ -14,11 +14,13 @@ a {
 }
 
 body {
-  margin: 0;
-  /* border: 2px solid red; */
+  height: 100%;
+  margin: 0 auto;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 /********Start of NavBar Shiet*********/
@@ -50,9 +52,6 @@ body {
   color: #c6bcb6;
 }
 
-
-
-
 #ig-icon {
   /* border: 2px solid brown; */
   width: 40px;
@@ -65,12 +64,12 @@ body {
 #logo-small {
   display: none;
 }
-#left-only{
+
+#left-only {
   font-family: 'Raleway';
   font-size: 20px;
   font-weight: 500;
 }
-
 
 .navbar a.responsive-icon {
   display: none;
@@ -222,7 +221,7 @@ span.psw {
 div.main {
   padding-top: -1px;
   margin-top: 0px;
-  height: 680px;
+  height: 780px;
 }
 
 #landing {
@@ -239,7 +238,7 @@ div.main {
   top: 35%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%,50%);
+  transform: translate(-50%, 50%);
 }
 
 #display-middle-text {
@@ -257,17 +256,21 @@ div.main {
 /********** *Home-ction* *************/
 
 div.about-jolly {
-
-}
-
-#about-info {
-  float: left;
-  justify-self: center;
   display: flex;
-  padding: 50px 100px 50px 100px;
-  font-size: 1.2vw;
-  color: hsl(0, 0, 30%);
+  align-items: center;
+  min-height: 80%;
 }
+
+.about-jolly p {
+
+  padding: 200px;
+  position: absolute;
+  line-height: 25px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+
 
 /*****************************/
 
@@ -275,8 +278,7 @@ div.marching-competition {
   max-width: 100%;
   background-image: url("../images/yuriy-valley.jpg");
   min-height: 120%;
-
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -285,7 +287,6 @@ div.portraits {
   max-width: 100%;
   background-image: url("../images/ali-picnic.jpg");
   min-height: 120%;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -295,7 +296,6 @@ div.trojan-bandfest {
   max-width: 100%;
   background-image: url("../images/connor-sunset.jpg");
   min-height: 120%;
-
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -326,54 +326,49 @@ div.trojan-bandfest {
 
 /*********************************************/
 
-footer.bottom-page {
-  /* width: 100%; */
-  /*border: 3px solid red;*/
-  background-color: white;
-  margin: 40px 10px 55px 50px;
-}
-
-div.button-top {
-  /*border: 2px solid blue;*/
-  vertical-align: middle;
-  text-align: center;
+.bottom-page {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#text-top {
+
+
+.bottom-page a{
   text-decoration: none;
+  padding: 40px;
+  margin: 0;
+}
+
+#text-top {
   color: black;
   font-size: 22px;
 }
 
 /* Home Style End */
 
-/* Contact Styles Start */
+/******** Contact Styles Start ********/
 
-/* Start about secton */
+/**** Start about secton ****/
+section{
+  width: 100%;
+}
+.hero-contact{
+  border: 2px solid red;
+  background-image: url('../images/pineapple.jpg');
 
-div.about-section {
-  border: 0.01px solid white;
-  background-image: url("../images/santiago-mountain.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  /* margin-top: 98px; */
-  width: 100%;
+  position: relative;
+
 }
 
-div.contact-name {
-  /* border: 2px solid orange; */
-  text-align: center;
-  width: 100%;
-  margin-top: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+.hero-text{
+
 }
 
-/* End about section */
+/**** End about section ****/
 
 /* Start info section */
 
@@ -456,23 +451,22 @@ div.column img {
 /* Mobile Styles Start */
 
 @media screen and (max-width: 600px) {
-  #left-only{
+  #left-only {
     display: none;
   }
-  #logo-small{
+  #logo-small {
     overflow: visible;
     display: inline-flex;
   }
-  #logo-small #logo-props{
+  #logo-small #logo-props {
     width: 60px;
     height: 60px;
     filter: drop-shadow(0.5px 1px 1px #222);
   }
-
-  #pic1, #pic2, #pic3{
+  #pic1, #pic2, #pic3 {
     min-height: 50%;
   }
-  #landing{
+  #landing {
     min-height: 80%;
   }
 }
@@ -512,14 +506,13 @@ div.column img {
 }
 
 @media screen and (max-width: 600px) {
-  p {
-    font-size: 20px;
-  }
   .mytext, .message-box {
     width: 100%;
   }
-  .about-jolly {
-    width: 50%;
-    min-height: 50%;
+  .about-jolly p {
+    padding: 30px;
+    font-weight: lighter;
+    font-stretch: semi-expanded;
+    font-size: 15px;
   }
 }
