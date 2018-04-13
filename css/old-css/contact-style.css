@@ -1,0 +1,125 @@
+/* Contact Styles Start */
+* {
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-size: 18px;
+  font-family: 'Anaheim';
+}
+/****Nav Bar****/
+
+#navbar {
+  background-color: white;
+  /* Black background color */
+  position: fixed;
+  top: 0;
+  /* Make it stick/fixed */
+  /* Hide the navbar 50 px outside of the top view */
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+}
+
+#navbar a, p {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar-left {
+  float: left;
+  padding: -15px;
+  margin: -15px;
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+#p1 {
+  font-family: 'Anaheim';
+  color: lightgray;
+}
+
+#p2 {
+  font-family: 'Anaheim';
+}
+
+#logo {
+  width: 70px;
+  height: 70px;
+}
+
+#logo-only:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(5px 5px 5px #222);
+  transition: 0.3s;
+  color: black;
+}
+
+/****Nav bar end****/
+
+/* Start about secton */
+
+div.about-section {
+  /* border: 2px solid black; */
+  background-image: url("../images/table-9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 98px;
+  height: 400px;
+  width: 100%;
+}
+
+div.contact-name {
+  /* border: 2px solid orange; */
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* End about section */
+
+/* Start info section */
+
+div.info {
+  padding-top: -1px;
+  height: 680px;
+}
+
+/* End info section */
+
+div.container {
+  text-align: center;
+  /* border: 2px solid red; */
+  width: 100%;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+
+.mytext {
+  width: 500px;
+}
+.message-box{
+  width: 500px;
+  height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  p{
+    font-size: 14px;
+  }
+  .container {
+
+  }
+  .mytext, .message-box{
+      width: 100%;
+  }
+}
+/* Contact Styles End */

@@ -1,57 +1,53 @@
 <!DOCTYPE html>
-
-<html>
+<html id="contact-img">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Contact</title>
 </head>
 
-<body>
-  <div id="navbar">
-    <div class="navbar-left">
-      <a id="logo-only" href="./home.html"><img id="logo"src="./images/logo.png" alt="Jolly BT Photography"></img></a>
+<body >
+  <div class="contact-container">
+    <h2 class="white-text">Contact</h2>
+    <p class="white-text">If you have any inquiries or would like to hire me, please fill out the contact form below and I will get back to you as soon as possible.</p>
+
+    <div class="flex-con marginBottom">
+      <span class="entry">Full Name</span>
+      <input class="flexItem input-color" placeholder="John Doe" >
     </div>
-    <a href="javascript:void(0);" class="responsive-icon" onclick="myFunction()">&#9776;</a>
-    <a class="login"href="#">Login</a>
-    <a href="https://www.instagram.com/jollybtphotography/"  target="_blank"><img id="ig-icon" src="./images/ig.png"></img>
-    <a id="page1">Contact</a>
-    <a id="page2" href="./gallery.html">Gallery</a>
 
-  </div>
+    <div class="flex-con marginBottom">
+      <span class="entry">Phone Number</span>
+      <input class="flexItem input-color" placeholder=1(808)123-4567 >
+    </div>
 
-  <div class="about-section">
-    <div class="contact-name">
-      <h1>Contact</h1>
-      <p>This section is available for inquiries from potential clients to contact Jolly Tugas directly. All inquiries are responded to on a first come first serve basis and we will do the best we can.</p>
+    <div class="flex-con marginBottom">
+      <span class="entry">E-mail</span>
+      <input class="flexItem input-color" placeholder="johndoe@hotmail.com" >
+    </div>
+
+    <div class="flex-con marginBottom">
+    <textarea id="text-rep" class="text-enter" rows="10" cols="92" ></textarea>
+
+    </div>
+    <div class="flex-center">
+      <button class="entry-button butt-over">Submit</button>
+    </div>
+    <br>
+    <div class="flex-center">
+      <form action="home.html">
+        <button class="entry-button butt-over" type="submit" >Home</button>
+      </form>
     </div>
   </div>
-  <div class="container">
-    <p>Please use the form below to contact Jolly Tugas Photography with any questions or comments you may have. We look forward to talking with you soon and will reply to your email as soon as possible. </p>
-    <form class="info-section" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
-      <input class="mytext" type="text" name="fullname" placeholder="Your name" tabindex="2" ><br><br>
-      <input class="mytext"  type="text" name="email"  placeholder="Your Email Address" ><br><br>
-      <input class="mytext" type="text" name="phn-number" placeholder="Your Phone Number"><br><br>
-      <textarea class="message-box" type="text" name="message" placeholder="Type Message Here.." ></textarea><br><br>
-      <input type="submit" name="submit" value="Send">
-    </form>
-  </div>
-  <footer>
-    <p> </p>
-  </footer>
-
-
 
 
 </body>
-
 <script src="./script/script.js">
 </script>
 

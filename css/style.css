@@ -1,76 +1,61 @@
 /* Home Style Start */
-h1{
-  font-family: 'Montserrat',sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
 }
-p{
+input:focus{
+  background: white;
+}
+textarea:focus{
+  background: white;
+}
+p,span {
   /* Allows text to be responsive when page size changes */
-  font-size: 1.5vw;
   font-family: 'Raleway', sans-serif;
 }
-a{
-  font-family: 'Montserrat',sans-serif;
+
+a {
+  font-family: 'Montserrat', sans-serif;
 }
 
-* {
+body {
+  height: 100%;
   margin: 0;
-  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-ul {
-  list-style-type: none;
+padding{
   margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
+/********Start of NavBar Shiet*********/
 
-#navbar {
-  /* border: 1px solid red; */
-  overflow: hidden;
-  background-color: white;
-  /* Black background color */
-  position: fixed;
-  /* Make it stick/fixed */
-  top: -100px;
-  /* Hide the navbar 50 px outside of the top view */
+.navbar {
+  /* width: 100%; */
+  /* overflow: hidden; */
   width: 100%;
-  /* Full width */
-  transition: top 0.3s;
-  /* Transition effect when sliding down (and up) */
+  position: absolute;
 }
 
-#navbar a {
-  /* border: 1px solid orange; */
-  justify-content: right;
-  float: right;
-  display: flex;
-  color: black;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 27vw;
-}
-#navbar a.login{
-  background-color: #f0f0f0;
-}
-#navbar a:hover{
-  color: #c6bcb6;
-}
-
-.navbar-left {
+.navbar a {
   float: left;
-  padding: -15px;
-  margin: -15px;
-  filter: drop-shadow(2px 2px 2px #222);
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-#page1 {
-  font-family: 'Montserrat';
-  font-weight: 100;
+.navbar .a-right {
+  float: right;
 }
 
-#page2{
-  font-family: 'Montserrat';
-  font-weight: 100;
+#logo {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar a:hover {
+  color: #c6bcb6;
 }
 
 #ig-icon {
@@ -82,181 +67,364 @@ ul {
   align-items: right;
 }
 
-#logo {
-  width: 65px;
-  height: 65px;
-}
-
-#logo-only:hover {
-  transform: scale(1.1);
-  /* filter: drop-shadow(1px 1px 1px #222); */
-  transition: 0.3s;
- color: black;
-}
-
-#navbar a.responsive-icon{
+#logo-small {
   display: none;
 }
 
-
-
-/************************************/
-
-div.main {
-  /*border: 2px solid red;*/
-  padding-top: -1px;
-  margin-top: 0px;
-  height: 680px;
+#left-only {
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 500;
 }
 
-div.landing {
-  background-image: url("../images/Jolly.jpg");
-  min-height: auto;
+.navbar a.responsive-icon {
+  display: none;
+}
+
+/**********End of NavBar Shiet************/
+
+/************** Modal Begin *****************/
+
+/* Full width input fields */
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal-button {
+  background-color: #015249;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #cd5360;
+}
+
+.imgcontainer {
+  background-color: white;
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.lens-av {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.box {
+  padding: 16px;
+  background-color: white;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  padding-right: 10px;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 600px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+div.main {
+  padding-top: -1px;
+  margin-top: 0px;
+  height: 780px;
+}
+
+#landing {
+  background-image: url("../images/faroe-island.jpg");
+  height: 100%;
   max-width: auto;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-div.display-middle {
-  /*border: 3px solid blue;*/
-  padding: 200px 20px;
-  margin: 0 auto;
-  vertical-align: middle;
-  text-align: center;
+#landing .display-middle {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-self: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 50%);
 }
 
 #display-middle-text {
   font-family: 'Montserrat';
-  font-size: 15vw;
-  font-weight: lighter;
+  font-size: 5vw;
+  font-weight: 600;
   letter-spacing: 8px;
-  color: white;
-  text-shadow: 2px 4px black;
+  color: #202020;
   margin: 0 auto;
+  border: 20px;
+  padding: 20px 20px 20px;
+  background-color: rgba(87, 170, 130, 0.5);
 }
 
 /********** *Home-ction* *************/
 
 div.about-jolly {
-  /* border: 2px solid red; */
-  /* width: 80%; */
-  padding: 120px 20px 120px 20px;
-  margin: 20px 20px 20px 20px;
-  height: 80%;
-  background-color: white;
-
+  display: flex;
+  align-items: center;
+  min-height: 60%;
 }
-#about-info{
-  justify-self: center;
-  padding: 50px 10px 50px 10px;
-  text-align: center;
-  font-size: 1.5vw;
+
+.about-jolly p {
+  padding: 100px 15%;
+  position: absolute;
+  line-height: 25px;
+  font-weight: lighter;
+  margin: 0;
+}
+#about-font{
+  font-size: 1em;
 }
 
 /*****************************/
 
 div.marching-competition {
-  max-width: 100%;
-  background-image: url("../images/cool.jpg");
-  min-height: 100%;
-  background-attachment: fixed;
-  background-position: top;
+  background-image: url("../images/yuriy-valley.jpg");
+  height: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div.portraits {
-  max-width: 100%;
-  background-image: url("../images/purple-flag.jpg");
-  min-height: 100%;
-  background-attachment: fixed;
+  background-image: url("../images/ali-picnic.jpg");
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div.trojan-bandfest {
-  max-width: 100%;
-  background-image: url("../images/competition.jpg");
-  min-height: 100%;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: url("../images/connor-sunset.jpg");
+  height: 100%;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.paradox-box{
+  display:flex;
   justify-content: center;
-  padding:300px 20px 50px 20px;
-}
-.paradox-text{
-  font-family: 'Raleway';
-  font-size: 4vw;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 10px;
-  padding: 20px;
+  align-items: center;
 }
 
+
+.text {
+  font-size: 8vh;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .text-border{
+   border: 1px solid rgba(0,0,0,.08);
+   border-radius: 2px;
+   background-color: rgba(255,255,255, .5);
+   padding: 10px 20px 10px 20px;
+ }
 /*********************************************/
 
-footer.bottom-page {
-  /* width: 100%; */
-  /*border: 3px solid red;*/
-  background-color: white;
-  margin: 40px 10px 55px 50px;
-}
-
-div.button-top {
-  /*border: 2px solid blue;*/
-  vertical-align: middle;
-  text-align: center;
+.bottom-page {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#text-top {
+.bottom-page a {
   text-decoration: none;
+  padding: 40px;
+  margin: 0;
+}
+
+#text-top {
   color: black;
-  font-family: sans-serif;
   font-size: 22px;
 }
+
 /* Home Style End */
 
+/******** Contact Styles Start ********/
 
+/**** Start about secton ****/
 
-/* Contact Styles Start */
-/* Start about secton */
-
-div.about-section {
-  border: 0.01px solid white;
-  background-image: url("../images/table-9.jpg");
-  background-repeat: no-repeat;
+#contact-img {
+  background-image: url('../images/lake.jpeg');
   background-size: cover;
-  background-position: center;
-  /* margin-top: 98px; */
-  /* height: 400px; */
+  background-position: top;
+}
+
+.white-text{
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+}
+.contact-container {
+  width: 60%;
+  margin: 50px auto;
+   background: linear-gradient(135deg,#5b9aa0 30%, #d6d4e0 100% );
+  border-radius: 8px;
+  padding: 50px 25px;
+  border: 1px solid gray;
+  box-shadow: 5px 5px 5px black;
+}
+
+
+.flex-con {
+  display: flex;
+}
+
+.flexItem {
+  flex: 1;
+}
+.input-color{
+  background-color: #f2f2f2;
+}
+.text-enter{
+  border: 0.2px solid rgba(150, 128, 108, 0.5);
+  padding: 0.5em 0.75em;
+  background-color: #f2f2f2;
+  color: #666666;
+}
+.butt-over:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+.marginBottom {
+  margin-bottom: 25px;
+}
+
+.entry {
+  border: 1px solid #fff;
+  padding: 0.5em 0.75em;
+  background-color: rgba(147, 128, 255 0.8);
+  color: #fff;
+  box-shadow: 1px 1px 1px black;
+  font-weight: bold;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#text-rep {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
   width: 100%;
 }
 
-div.contact-name {
-  /* border: 2px solid orange; */
-  text-align: center;
-  width: 100%;
-  margin-top: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-/* End about section */
+/**** End about section ****/
 
 /* Start info section */
 
@@ -283,49 +451,15 @@ div.container {
   width: 500px;
   height: 200px;
 }
-/* Contact Styles End */
 
-/* Gallery Styles Start */
+/******** Contact Styles End ********/
 
-/********Start of NavBar Shiet*********/
-#navbar {
-  background-color: white;
-  /* Black background color */
-  position: fixed;
-  /* Make it stick/fixed */
-  /* Hide the navbar 50 px outside of the top view */
-  width: 100%;
-  /* Full width */
-  transition: top 0.3s;
-  /* Transition effect when sliding down (and up) */
-}
 
-#navbar a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-.navbar-left{
-  float: left;
-  padding: -15px;
-  margin: -15px;
-  filter: drop-shadow(2px 2px 2px #222);
-}
-
-#logo{
-  width: 70px;
-  height: 70px;
-}
-
-/**********End of NavBar Shiet************/
+/******** Gallery Styles Start ********/
 
 /* Start of header div */
-div.header{
+
+div.header {
   padding: 150px 20px 10px 20px;
   margin: 0 auto;
   vertical-align: middle;
@@ -334,77 +468,111 @@ div.header{
   justify-content: center;
   align-items: center;
 }
-div.header-p{
+
+div.header-p {
   /* border: 2px solid orange; */
   display: flex;
   justify-content: middle;
   align-items: center;
   padding: 20px;
 }
-#peader{
-  /* border: 2px solid blue; */
+
+#peader {
   font-size: 16px;
-    align-items: center;
-    justify-content: middle;
-
+  align-items: center;
+  justify-content: middle;
 }
-/*  End of Header Div*/
-div.row:after{
 
+/*  End of Header Div*/
+
+div.row:after {
   display: table;
   content: "";
-  clear:both;
+  clear: both;
 }
 
-div.column{
+div.column {
   margin: 0px auto;
   float: left;
   flex: 50%;
   padding: 2px;
 }
 
-div.column img{
+div.column img {
   margin-top: 5px;
 }
-/* Gallery Styles End */
 
+/******** Gallery Styles End ********/
 
+/********* Mobile Styles Start *********/
 
-/* Mobile Styles Start */
+@media screen and (max-width: 600px) {
+  #left-only {
+    display: none;
+  }
+  #logo-small {
+    overflow: visible;
+    display: inline-flex;
+  }
+  #logo-small #logo-props {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0.5px 1px 1px #222);
+  }
+  #pic1, #pic2, #pic3 {
+    min-height: 50%;
 
-/* This hides all the other navigator pages and only displays 2 items */
-@media screen and (max-width: 600px){
-   .navbar-left a:not(logo-only){display:flex};
-   #navbar a {display:none};
-   #navbar a.responsive-icon{
-     float: right;
-     display: flex;
-   }
+  }
+  #landing {
+    min-height: 80%;
+  }
 }
 
-@media screen and (max-width: 600px){
-  #navbar.responsive{position: relative};
-  #navbar.responsive a.responsive-icon {
+/* This hides all the other navigator pages and only displays 2 items */
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.responsive-icon {
+    float: right;
+    display: block;
+    overflow: hidden;
+  }
+}
+
+/* Adds responsive class to .navbar when user clicks on icon.  */
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+    overflow: hidden;
+  }
+  .navbar.responsive .responsive-icon {
     position: absolute;
     right: 0;
     top: 0;
+    overflow: hidden;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    overflow: hidden;
   }
 }
-
+/* The following makes the about text responsive when the user is on mobile */
 @media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
   .mytext, .message-box {
     width: 100%;
   }
   .about-jolly {
-    width: 80%;
-    min-height: 80%;
+    line-height: 190%;
   }
-  #about-info{
-    width: 100%;
-    font-size: 2vw;
+  #about-font{
+    font-weight: lighter;
+    font-stretch: semi-expanded;
+    font-size: 70%;
   }
 }
 

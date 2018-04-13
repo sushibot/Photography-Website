@@ -1,33 +1,26 @@
-window.onscroll = function() {scrollFunction()};
-// window.addEventListener("click", changeTextColor());
-
 var size = {
   width: window.innerWidth || document.body.clientWidth,
- height: window.innerHeight || document.body.clientHeight
+  height: window.innerHeight || document.body.clientHeight
+}
+var modal = document.getElementById('modal-id');
+
+console.log(modal);
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 console.log(size);
 
-function scrollFunction() {
-if(size.width>=601){
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  document.getElementById("navbar").style.top = "0px";
+function phoneChange() {
+  var x = document.getElementById("phone-nav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
   } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
+    x.className = "navbar";
   }
 }
-if(size.width<=600){
-  console.log(size.width);
-  myFunction();
+function home(){
+  
 }
 
-function myFunction() {
-
-  alert("Page has changed..");
-    // var x = document.getElementById("navbar");
-    // if (x.className === "topnav") {
-    //     x.className += "responsive";
-    // } else {
-    //     x.className = "topnav";
-    // }
-}
