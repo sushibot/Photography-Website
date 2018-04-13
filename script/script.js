@@ -20,4 +20,7 @@ function phoneChange() {
     x.className = "navbar";
   }
 }
+function home(){
+  
+}
 

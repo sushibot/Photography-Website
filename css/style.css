@@ -1,6 +1,6 @@
 /* Home Style Start */
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -16,11 +16,9 @@ a {
 body {
   height: 100%;
   margin: 0 auto;
-
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 /********Start of NavBar Shiet*********/
@@ -29,6 +27,7 @@ body {
   /* width: 100%; */
   /* overflow: hidden; */
   width: 100%;
+  position: absolute;
 }
 
 .navbar a {
@@ -262,15 +261,12 @@ div.about-jolly {
 }
 
 .about-jolly p {
-
   padding: 200px;
   position: absolute;
   line-height: 25px;
   font-weight: lighter;
   margin: 0;
 }
-
-
 
 /*****************************/
 
@@ -332,9 +328,7 @@ div.trojan-bandfest {
   align-items: center;
 }
 
-
-
-.bottom-page a{
+.bottom-page a {
   text-decoration: none;
   padding: 40px;
   margin: 0;
@@ -350,24 +344,42 @@ div.trojan-bandfest {
 /******** Contact Styles Start ********/
 
 /**** Start about secton ****/
-section{
+
+.contact-container {
+  width: 60%;
+  margin: 50px auto;
+  background: white;
+  border-radius: 8px;
+  padding: 50px 25px;
+  border: 1px solid gray;
+  box-shadow: 7px 7px 7px #777777;
+}
+
+.flex-con {
+  display: flex;
+}
+
+.flexItem {
+  flex: 1;
+}
+
+.marginBottom {
+  margin-bottom: 25px;
+}
+
+.entry {
+  border: 1px solid rgba(147, 128, 108, 0.25);
+  padding: 0.5em 0.75em;
+  background-color: rgba(147, 128, 108, 0.1);
+  color: #666666;
+}
+#text-rep{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
   width: 100%;
 }
-.hero-contact{
-  border: 2px solid red;
-  background-image: url('../images/pineapple.jpg');
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-}
-
-.hero-text{
-
-}
-
 /**** End about section ****/
 
 /* Start info section */
