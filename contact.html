@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="contact-img">
 
 <head>
   <meta charset="utf-8">
@@ -11,7 +11,7 @@
   <title>Contact</title>
 </head>
 
-<body>
+<body >
   <!-- <div class="navbar" id="phone-nav">
     <a id="logo-small" href="./home.html"><img src="./images/logo.png" id="logo-props" ></img></a>
     <a id="left-only" href="./index.html">Jolly Tugas</a>
@@ -21,65 +21,40 @@
     <a href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()" style="font-size:20px;">&#9776;</a>
   </div> -->
   <div class="contact-container">
-    <h2>Contact</h2>
-    <p>If you have any inquiries or would like to hire me, please fill out the contact form below and I will get back to you as soon as possible.</p>
-    <hr>
+    <h2 class="white-text">Contact</h2>
+    <p class="white-text">If you have any inquiries or would like to hire me, please fill out the contact form below and I will get back to you as soon as possible.</p>
+
     <div class="flex-con marginBottom">
       <span class="entry">Full Name</span>
-      <input class="flexItem" placeholder="John Doe">
+      <input class="flexItem input-color" placeholder="John Doe" >
     </div>
 
     <div class="flex-con marginBottom">
       <span class="entry">Phone Number</span>
-      <input class="flexItem" placeholder=1(808)123-4567>
+      <input class="flexItem input-color" placeholder=1(808)123-4567 >
     </div>
 
     <div class="flex-con marginBottom">
       <span class="entry">E-mail</span>
-      <input class="flexItem" placeholder="johndoe@hotmail.com">
+      <input class="flexItem input-color" placeholder="johndoe@hotmail.com" >
     </div>
 
     <div class="flex-con marginBottom">
-    <textarea id="text-rep"class="entry" rows="10" cols="92"></textarea>
+    <textarea id="text-rep" class="text-enter" rows="10" cols="92" ></textarea>
 
     </div>
-    <button class="entry">Submit</button>
-    <form action="home.html">
-      <button class="entry" type="submit" >Home</button>
-    </form>
+    <div class="flex-center">
+      <button class="entry-button butt-over">Submit</button>
+    </div>
+    <br>
+    <div class="flex-center">
+      <form action="home.html">
+        <button class="entry-button butt-over" type="submit" >Home</button>
+      </form>
+    </div>
+
   </div>
-  <!-- <div id="modal-id" class="modal">
-    <form class="modal-content animate" action="index.php" method="post">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('modal-id').style.display='none'" class="close"> </span>
-        <img src="./images/logo.png" class="lens-av">
-      </div>
-      <div class="box">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" name="uname" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="text" name="psw" required>
-
-        <button type="submit">Login</button>
-      </div>
-      <div class="box" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('modal-id').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">Password? </a></span>
-      </div>
-    </form>
-  </div> -->
-
-  <!-- <div class="container">
-    <p>Please use the form below to contact Jolly Tugas Photography with any questions or comments you may have. We look forward to talking with you soon and will reply to your email as soon as possible. </p>
-    <form class="info-section" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
-      <input class="mytext" type="text" name="fullname" placeholder="Your name" tabindex="2"><br><br>
-      <input class="mytext" type="text" name="email" placeholder="Your Email Address"><br><br>
-      <input class="mytext" type="text" name="phn-number" placeholder="Your Phone Number"><br><br>
-      <textarea class="message-box" type="text" name="message" placeholder="Type Message Here.."></textarea><br><br>
-      <input type="submit" name="submit" value="Send">
-    </form>
-  </div> -->
 
 </body>
 <script src="./script/script.js">

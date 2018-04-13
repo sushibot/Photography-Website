@@ -1,10 +1,15 @@
 /* Home Style Start */
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
-
-p {
+input:focus{
+  background: white;
+}
+textarea:focus{
+  background: white;
+}
+p,span {
   /* Allows text to be responsive when page size changes */
   font-family: 'Raleway', sans-serif;
 }
@@ -15,12 +20,14 @@ a {
 
 body {
   height: 100%;
-  margin: 0 auto;
+  margin: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+padding{
+  margin: 0;
+}
 /********Start of NavBar Shiet*********/
 
 .navbar {
@@ -89,7 +96,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+.modal-button {
   background-color: #015249;
   color: white;
   padding: 14px 20px;
@@ -225,7 +232,7 @@ div.main {
 
 #landing {
   background-image: url("../images/faroe-island.jpg");
-  min-height: 110%;
+  height: 100%;
   max-width: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -257,7 +264,7 @@ div.main {
 div.about-jolly {
   display: flex;
   align-items: center;
-  min-height: 80%;
+  min-height: 60%;
 }
 
 .about-jolly p {
@@ -271,6 +278,7 @@ div.about-jolly {
 /*****************************/
 
 div.marching-competition {
+
   max-width: 100%;
   background-image: url("../images/yuriy-valley.jpg");
   min-height: 120%;
@@ -289,6 +297,7 @@ div.portraits {
 }
 
 div.trojan-bandfest {
+
   max-width: 100%;
   background-image: url("../images/connor-sunset.jpg");
   min-height: 120%;
@@ -297,27 +306,16 @@ div.trojan-bandfest {
   background-size: cover;
 }
 
-.paradox-box {
-  justify-content: center;
-  width: 20em;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  /* padding: 300px 700px 50px 700px; */
-}
+.text-box{
+display:flex;
+justify-content: center;
+align-items: center;
 
-.paradox-text {
-  margin: 0;
-  font-family: 'Raleway';
-  font-size: 3vw;
-  align-items: center;
-  justify-content: center;
-  font-weight: 100;
-  color: #383838;
+}
+.text-box h2{
+  text-shadow: 2px 2px 6px #000;
+  color: #fff;
   text-align: center;
-  background-color: rgba(232, 232, 232, 0.6);
-  border-radius: 10px;
-  padding: 10px;
 }
 
 /*********************************************/
@@ -345,15 +343,26 @@ div.trojan-bandfest {
 
 /**** Start about secton ****/
 
+#contact-img {
+  background-image: url('../images/lake.jpeg');
+  background-size: cover;
+  background-position: top;
+}
+
+.white-text{
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+}
 .contact-container {
   width: 60%;
   margin: 50px auto;
-  background: white;
+   background: linear-gradient(135deg,#5b9aa0 30%, #d6d4e0 100% );
   border-radius: 8px;
   padding: 50px 25px;
   border: 1px solid gray;
-  box-shadow: 7px 7px 7px #777777;
+  box-shadow: 5px 5px 5px black;
 }
+
 
 .flex-con {
   display: flex;
@@ -362,24 +371,44 @@ div.trojan-bandfest {
 .flexItem {
   flex: 1;
 }
-
+.input-color{
+  background-color: #f2f2f2;
+}
+.text-enter{
+  border: 0.2px solid rgba(150, 128, 108, 0.5);
+  padding: 0.5em 0.75em;
+  background-color: #f2f2f2;
+  color: #666666;
+}
+.butt-over:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
 .marginBottom {
   margin-bottom: 25px;
 }
 
 .entry {
-  border: 1px solid rgba(147, 128, 108, 0.25);
+  border: 1px solid #fff;
   padding: 0.5em 0.75em;
-  background-color: rgba(147, 128, 108, 0.1);
-  color: #666666;
+  background-color: rgba(147, 128, 255 0.8);
+  color: #fff;
+  box-shadow: 1px 1px 1px black;
+  font-weight: bold;
 }
-#text-rep{
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#text-rep {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   resize: none;
   width: 100%;
 }
+
 /**** End about section ****/
 
 /* Start info section */
@@ -408,9 +437,10 @@ div.container {
   height: 200px;
 }
 
-/* Contact Styles End */
+/******** Contact Styles End ********/
 
-/* Gallery Styles Start */
+
+/******** Gallery Styles Start ********/
 
 /* Start of header div */
 
@@ -433,7 +463,6 @@ div.header-p {
 }
 
 #peader {
-  /* border: 2px solid blue; */
   font-size: 16px;
   align-items: center;
   justify-content: middle;
