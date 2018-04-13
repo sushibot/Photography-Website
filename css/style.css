@@ -240,8 +240,11 @@ div.main {
 }
 
 #landing .display-middle {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 50%);
@@ -268,11 +271,14 @@ div.about-jolly {
 }
 
 .about-jolly p {
-  padding: 200px;
+  padding: 100px 15%;
   position: absolute;
   line-height: 25px;
   font-weight: lighter;
   margin: 0;
+}
+#about-font{
+  font-size: 1em;
 }
 
 /*****************************/
@@ -312,8 +318,8 @@ div.trojan-bandfest {
 
 
 .text {
-  font-size: 40px;
-  text-shadow: 1px 1px 4px #000;
+  font-size: 8vh;
+  text-shadow: 1px 1px 1px #000;
   color: #fff;
   text-align: center;
   display:flex;
@@ -496,9 +502,9 @@ div.column img {
   margin-top: 5px;
 }
 
-/* Gallery Styles End */
+/******** Gallery Styles End ********/
 
-/* Mobile Styles Start */
+/********* Mobile Styles Start *********/
 
 @media screen and (max-width: 600px) {
   #left-only {
@@ -515,6 +521,7 @@ div.column img {
   }
   #pic1, #pic2, #pic3 {
     min-height: 50%;
+
   }
   #landing {
     min-height: 80%;
@@ -554,15 +561,18 @@ div.column img {
     overflow: hidden;
   }
 }
-
+/* The following makes the about text responsive when the user is on mobile */
 @media screen and (max-width: 600px) {
   .mytext, .message-box {
     width: 100%;
   }
-  .about-jolly p {
-    padding: 30px;
+  .about-jolly {
+    line-height: 190%;
+  }
+  #about-font{
     font-weight: lighter;
     font-stretch: semi-expanded;
-    font-size: 15px;
+    font-size: 70%;
   }
 }
+
