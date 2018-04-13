@@ -278,46 +278,55 @@ div.about-jolly {
 /*****************************/
 
 div.marching-competition {
-
-  max-width: 100%;
   background-image: url("../images/yuriy-valley.jpg");
-  min-height: 120%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div.portraits {
-  max-width: 100%;
   background-image: url("../images/ali-picnic.jpg");
-  min-height: 120%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div.trojan-bandfest {
-
-  max-width: 100%;
   background-image: url("../images/connor-sunset.jpg");
-  min-height: 120%;
+  height: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.text-box{
-display:flex;
-justify-content: center;
-align-items: center;
 
-}
-.text-box h2{
-  text-shadow: 2px 2px 6px #000;
+.text {
+  font-size: 40px;
+  text-shadow: 1px 1px 4px #000;
   color: #fff;
   text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
+ .text-border{
+   border: 1px solid rgba(0,0,0,.08);
+   border-radius: 2px;
+   background-color: rgba(255,255,255, .5);
+   padding: 10px 20px 10px 20px;
+ }
 /*********************************************/
 
 .bottom-page {
