@@ -9,6 +9,9 @@ input:focus{
 textarea:focus{
   background: white;
 }
+hr{
+  color: black;
+}
 p,span {
   /* Allows text to be responsive when page size changes */
   font-family: 'Raleway', sans-serif;
@@ -25,8 +28,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-padding{
-  margin: 0;
+button{
+  font: 'Lora';
+  font-size: 2vh;
 }
 /********Start of NavBar Shiet*********/
 
@@ -89,10 +93,11 @@ padding{
 
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 12px 20px;
+  padding: 15px 10%;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
+  border-radius: 2px;
   box-sizing: border-box;
 }
 
@@ -365,13 +370,17 @@ div.trojan-bandfest {
 }
 
 .white-text{
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+  color: #000;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.20);
+}
+.text-title{
+  text-align: center;
+  font-size: 5vh;
 }
 .contact-container {
-  width: 60%;
+  width: 50%;
   margin: 50px auto;
-   background: linear-gradient(135deg,#5b9aa0 30%, #d6d4e0 100% );
+  background-color:rgba(234,236,229, 0.5);
   border-radius: 8px;
   padding: 50px 25px;
   border: 1px solid gray;
@@ -388,12 +397,21 @@ div.trojan-bandfest {
 }
 .input-color{
   background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
 }
 .text-enter{
   border: 0.2px solid rgba(150, 128, 108, 0.5);
   padding: 0.5em 0.75em;
   background-color: #f2f2f2;
   color: #666666;
+}
+.entry-button{
+  border-radius: 2px;
+  padding: 10px 5em;
+  background-color:#bc5a45;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 }
 .butt-over:hover{
     transform: translateY(-1px);
@@ -416,6 +434,7 @@ div.trojan-bandfest {
   justify-content: center;
   align-items: center;
 }
+
 #text-rep {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -521,7 +540,6 @@ div.column img {
   }
   #pic1, #pic2, #pic3 {
     min-height: 50%;
-
   }
   #landing {
     min-height: 80%;
@@ -529,7 +547,6 @@ div.column img {
 }
 
 /* This hides all the other navigator pages and only displays 2 items */
-
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none;
@@ -542,7 +559,6 @@ div.column img {
 }
 
 /* Adds responsive class to .navbar when user clicks on icon.  */
-
 @media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
@@ -561,6 +577,7 @@ div.column img {
     overflow: hidden;
   }
 }
+
 /* The following makes the about text responsive when the user is on mobile */
 @media screen and (max-width: 600px) {
   .mytext, .message-box {
