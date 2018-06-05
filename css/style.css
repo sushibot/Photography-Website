@@ -9,6 +9,9 @@ input:focus{
 textarea:focus{
   background: white;
 }
+hr{
+  color: black;
+}
 p,span {
   /* Allows text to be responsive when page size changes */
   font-family: 'Raleway', sans-serif;
@@ -25,8 +28,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-padding{
-  margin: 0;
+button{
+  font: 'Lora';
+  font-size: 2vh;
 }
 /********Start of NavBar Shiet*********/
 
@@ -89,10 +93,11 @@ padding{
 
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 12px 20px;
+  padding: 15px 10%;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
+  border-radius: 2px;
   box-sizing: border-box;
 }
 
@@ -167,10 +172,7 @@ span.psw {
 
 .modal-content {
   margin: 5% auto 15% auto;
-  /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
   width: 40%;
-  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
@@ -227,7 +229,7 @@ span.psw {
 div.main {
   padding-top: -1px;
   margin-top: 0px;
-  height: 780px;
+  height: 100vh;
 }
 
 #landing {
@@ -258,8 +260,10 @@ div.main {
   color: #202020;
   margin: 0 auto;
   border: 20px;
+  border-radius: 5px;
   padding: 20px 20px 20px;
   background-color: rgba(87, 170, 130, 0.5);
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.20);
 }
 
 /********** *Home-ction* *************/
@@ -271,15 +275,14 @@ div.about-jolly {
 }
 
 .about-jolly p {
-  padding: 100px 15%;
+  padding: 50% 15%;
   position: absolute;
-  line-height: 25px;
+  line-height: 210%;
   font-weight: lighter;
   margin: 0;
 }
-#about-font{
-  font-size: 1em;
-}
+
+
 
 /*****************************/
 
@@ -365,13 +368,17 @@ div.trojan-bandfest {
 }
 
 .white-text{
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+  color: #000;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.20);
+}
+.text-title{
+  text-align: center;
+  font-size: 5vh;
 }
 .contact-container {
-  width: 60%;
+  width: 50%;
   margin: 50px auto;
-   background: linear-gradient(135deg,#5b9aa0 30%, #d6d4e0 100% );
+  background-color:rgba(234,236,229, 0.5);
   border-radius: 8px;
   padding: 50px 25px;
   border: 1px solid gray;
@@ -388,12 +395,21 @@ div.trojan-bandfest {
 }
 .input-color{
   background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
 }
 .text-enter{
   border: 0.2px solid rgba(150, 128, 108, 0.5);
   padding: 0.5em 0.75em;
   background-color: #f2f2f2;
   color: #666666;
+}
+.entry-button{
+  border-radius: 2px;
+  padding: 10px 5em;
+  background-color:rgba(87, 170, 130);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
 }
 .butt-over:hover{
     transform: translateY(-1px);
@@ -416,6 +432,7 @@ div.trojan-bandfest {
   justify-content: center;
   align-items: center;
 }
+
 #text-rep {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -456,51 +473,78 @@ div.container {
 
 
 /******** Gallery Styles Start ********/
-
-/* Start of header div */
-
-div.header {
-  padding: 150px 20px 10px 20px;
+*{
+  box-sizing: border-box;
+}
+.gallery-landing{
+background-image: url('../images/pineapple.jpg');
+border: 1px solid white;
+height: 100%;
+margin: 0;
+padding: 10%;
+max-width: auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-self: center;
+}
+.gallery-landing h1{
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.20);
+  font-size: 5vw;
+  font-weight: 600;
+  letter-spacing: 8px;
+  color: #202020;
   margin: 0 auto;
-  vertical-align: middle;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 20px;
+  border-radius: 5px;
+  padding: 20px 20px 20px;
+  background-color: rgba(87, 170, 130, 0.5);
+}
+.row {
+ display: flex;
+ flex-wrap: wrap;
+ padding: 0 4px;
 }
 
-div.header-p {
-  /* border: 2px solid orange; */
-  display: flex;
-  justify-content: middle;
-  align-items: center;
-  padding: 20px;
+/* Create four equal columns that sits next to each other */
+.column {
+ flex: 25%;
+ max-width: 25%;
+ padding: 0 4px;
 }
 
-#peader {
-  font-size: 16px;
-  align-items: center;
-  justify-content: middle;
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+ margin-top: 8px;
+ vertical-align: middle;
+}
+.column img:hover{
+  opacity: 1;
+}
+.row img{
+  width: 100%;
 }
 
-/*  End of Header Div*/
-
-div.row:after {
-  display: table;
-  content: "";
-  clear: both;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+ .column {
+   flex: 50%;
+   max-width: 50%;
+ }
 }
 
-div.column {
-  margin: 0px auto;
-  float: left;
-  flex: 50%;
-  padding: 2px;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+ .column {
+   flex: 100%;
+   max-width: 100%;
+ }
 }
 
-div.column img {
-  margin-top: 5px;
-}
+
 
 /******** Gallery Styles End ********/
 
@@ -521,7 +565,6 @@ div.column img {
   }
   #pic1, #pic2, #pic3 {
     min-height: 50%;
-
   }
   #landing {
     min-height: 80%;
@@ -529,7 +572,6 @@ div.column img {
 }
 
 /* This hides all the other navigator pages and only displays 2 items */
-
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none;
@@ -542,7 +584,6 @@ div.column img {
 }
 
 /* Adds responsive class to .navbar when user clicks on icon.  */
-
 @media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
@@ -561,18 +602,23 @@ div.column img {
     overflow: hidden;
   }
 }
+
 /* The following makes the about text responsive when the user is on mobile */
 @media screen and (max-width: 600px) {
   .mytext, .message-box {
     width: 100%;
   }
-  .about-jolly {
-    line-height: 190%;
-  }
   #about-font{
     font-weight: lighter;
-    font-stretch: semi-expanded;
-    font-size: 70%;
+    font-size: 65%;
+  }
+}
+@media screen and (max-width: 600px){
+  .modal-content{
+    width: auto;
+  }
+  .contact-container{
+    width: auto;
   }
 }
 

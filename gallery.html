@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117528990-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117528990-1');
+  </script>
   <meta charset="utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" type="./images/logo-favicon" href="./images/logo-favicon.ico">
   <title>Gallery</title>
 </head>
 
 <body>
-  <div class="navbar" id="phone-nav">
-    <a id="logo-small" href="./home.html"><img src="./images/logo.png" id="logo-props" ></img></a>
-    <a id="left-only" href="./home.html">Jolly Tugas</a>
-    <a class="a-right" onclick ="document.getElementById('modal-id').style.display='block'" >Login</a>
-    <a class="a-right" href="./gallery.html">Gallery</a>
-    <a class="a-right" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
-    <a  href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()"style="font-size:20px;">&#9776;</a>
-  </div>
+    <div class="navbar" id="phone-nav">
+      <a id="logo-small" href="./home.html"><img src="./images/logo.png" id="logo-props" ></img></a>
+      <a id="left-only" href="./home.html">Jolly Tugas</a>
+      <a class="a-right" onclick="document.getElementById('modal-id').style.display='block'">Login</a>
+      <a class="a-right" href="./gallery.html">Gallery</a>
+      <a class="a-right" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
+      <a href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()" style="font-size:25px;">&#9776;</a>
+    </div>
 
+<div class="gallery-landing">
+<h1>Gallery</h1>
+</div>
+
+<div class="gallery-container">
   <div id="modal-id" class="modal">
     <form class="modal-content animate" action="index.php" method="post">
       <div class="imgcontainer">
-        <span onclick = "document.getElementById('modal-id').style.display='none'" class="close"> </span>
-        <img src="./images/logo.png" class="lens-av" >
+        <span onclick="document.getElementById('modal-id').style.display='none'" class="close"> </span>
+        <img src="./images/logo.png" class="lens-av">
       </div>
       <div class="box">
         <label for="uname"><b>Username</b></label>
@@ -37,47 +53,54 @@
         <button class="modal-button" type="submit">Login</button>
       </div>
       <div class="box" style="background-color:#f1f1f1">
-        <button type="button" onclick = "document.getElementById('modal-id').style.display='none'" class="cancelbtn modal-button">Cancel</button>
+        <button type="button" onclick="document.getElementById('modal-id').style.display='none'" class="cancelbtn modal-button">Cancel</button>
         <span class="psw">Forgot <a href="#">Password? </a></span>
       </div>
     </form>
   </div>
-
-  <div class="header" >
-    <h1>Welcome to my Gallery</h1>
-  </div>
-
-  <div class="header-p">
-    <p id="peader" >Paulo fierent luptatum pro ad, adhuc vivendum philosophia quo ex, diceret consulatu appellantur vel id. Autem eruditi et vim. Elit habeo dicit cum in, vix tollit apeirian aliquando eu. Ut pri assum ludus eruditi. In mei facer legere mediocrem, tempor intellegam quo ea.</p>
-  </div>
-
   <div class="row">
-    <div class="column">
-      <img src="./images/lake.jpeg" alt="lake" style="width: 100%;">
-      <img src="./images/cool.jpg" alt="4 dudes" style="width: 100%;">
-      <img src="./images/Space.jpg" alt="Space mountain boys wow" style="width: 100%;">
-    </div>
-
-    <div class="column">
-      <img src="./images/competition.jpg" alt="competition time" style="width: 100%;">
-      <img src="./images/color-guard.jpg" alt="who dis" style="width: 100%;">
-      <img src="./images/black-flag.jpg" alt="issa flag" style="width: 100%;">
-    </div>
-
-    <div class="column">
-      <img src="./images/purple-flag.jpg" alt="purple!" style="width: 100%;">
-      <img src="./images/drumline.jpg" alt="drumline" style="width: 100%;">
-      <img src="./images/drum-major.jpg" alt="dm" style="width: 100%;">
-
-    </div>
-
-    <div class="column">
-      <img src="./images/grapes.jpeg" alt="grapes" style="width: 100%;">
-      <img src="./images/reynaldo.jpg" alt="dis guy" style="width: 100%;">
-      <img src="./images/2grills.jpg" alt="grills" style="width: 100%;">
-    </div>
+  <div class="column">
+    <img src="./images/table-9.jpg">
+    <img src="./images/santiago-mountain.jpg">
+    <img src="./images/purple-flag.jpg">
+    <img src="./images/Jolly.jpg">
+    <img src="./images/grapes.jpeg">
+    <img src="./images/flagsGround.jpg">
+    <img src="./images/yuriy-valley.jpg">
+    <img src="./images/mug-luke.jpg">
   </div>
-<script src="./script/script.js"></script>
+  <div class="column">
+    <img src="./images/toa-cheers.jpg">
+    <img src="./images/bay-bridge.jpg">
+    <img src="./images/lake.jpeg">
+    <img src="./images/2grills.jpg">
+    <img src="./images/black-flag.jpg">
+    <img src="./images/light-fx.jpg" >
+    <img src="./images/drumline.jpg">
+    <img src="./images/homes.jpg">
+  </div>
+  <div class="column">
+    <img src="./images/portrait.jpeg">
+    <img src="./images/train.jpg">
+    <img src="./images/overlook.jpeg">
+    <img src="./images/canon-lens.jpg">
+    <img src="./images/dm-conduct1.jpg">
+    <img src="./images/island-austin.jpg">
+    <img src="./images/competition.jpg">
+    <img src="./images/cafe-photos.jpg">
+  </div>
+  <div class="column">
+    <img src="./images/andres-honu.jpg">
+    <img src="./images/competition.jpg">
+    <img src="./images/ali-picnic.jpg">
+    <img src="./images/blake-waves.jpg">
+    <img src="./images/portrait.jpeg">
+    <img src="./images/connor-sunset.jpg">
+    <img src="./images/cool.jpg">
+    <img src="./images/marriage.jpg">
+  </div>
+</div>
+</div>
 </body>
-
+<script src="./script/script.js"></script>
 </html>

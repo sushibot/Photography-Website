@@ -4,10 +4,11 @@
 } */
 html,body{
   height:100%;
+  min-height: 100%;
 }
 body{
   margin: 0;
-  background-image: url('../images/andres-honu.jpg');
+  background-image: url('../images/light-fx.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -37,6 +38,8 @@ img{
   /*for safari*/
   filter: drop-shadow(5px 5px 5px #222);
 }
+
+
 
 
 

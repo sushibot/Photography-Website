@@ -2,23 +2,36 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117528990-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117528990-1');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" type="./images/logo-favicon" href="./images/logo-favicon.ico">
   <title>Aloha</title>
 </head>
 
 <body>
   <div class="navbar" id="phone-nav">
     <a id="logo-small" href="./home.html"><img src="./images/logo.png" id="logo-props" ></img></a>
-    <a id="left-only" href="./index.html">Jolly Tugas</a>
+    <a id="left-only" href="./home.html">Jolly Tugas</a>
     <a class="a-right" onclick="document.getElementById('modal-id').style.display='block'">Login</a>
     <a class="a-right" href="./gallery.html">Gallery</a>
     <a class="a-right" href="./contact.html">Contact<span style="display: none;"> Me</span></a>
-    <a href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()" style="font-size:20px;">&#9776;</a>
+    <a href="javascript:void(0);" class="responsive-icon" onclick="phoneChange()" style="font-size:25px;">&#9776;</a>
   </div>
 
   <div class="main">
@@ -29,7 +42,7 @@
     </div>
 
     <div id="modal-id" class="modal">
-      <form class="modal-content animate" action="index.php" method="post">
+      <form class="modal-content animate" action="stats.html" method="post">
         <div class="imgcontainer">
           <span onclick="document.getElementById('modal-id').style.display='none'" class="close"> </span>
           <img src="./images/logo.png" class="lens-av">
@@ -41,7 +54,7 @@
           <label for="psw"><b>Password</b></label>
           <input type="text" name="psw" required>
 
-          <button class="modal-button" type="submit">Login</button>
+          <button class="modal-button" type="submit"><a href="./stats.html" style="decoration: none">Login</a></button>
         </div>
         <div class="box" style="background-color:#f1f1f1">
           <button type="button" onclick="document.getElementById('modal-id').style.display='none'" class="cancelbtn modal-button">Cancel</button>
