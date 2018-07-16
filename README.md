@@ -7,6 +7,8 @@ Goals of this website:
 3. Visualize an Audience Tracker Graph with Google Analytics 
 4. Optimize website speeds for faster image loading
 5. Create a Parasoul viewer for the picture Gallery 
+6. Use JotForms to create a contact page 
+
 
 As of now, the website is live but I will be adding changes and updating features soon. Later on, I plan on revamping the entire website using either React or Angular as a case study. 
 
